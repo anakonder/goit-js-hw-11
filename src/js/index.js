@@ -98,6 +98,8 @@ function renderEvents(events) {
         `
     }).join("")
     gallery.insertAdjacentHTML('beforeend', markup)
+    const simpleLitbox = new SimpleLightbox('.gallery__link', option);
+    simpleLitbox.refresh();
 }
 
 
@@ -131,4 +133,3 @@ const option = {
     captionsDelay: 250
 }
 
-const simpleLitbox = new SimpleLightbox('.gallery__link', option);
